@@ -313,8 +313,7 @@ The short forms "u", "m", and "s" stand for "unsupervised", "semi-supervised", a
 Note that the datasets of the `GutenTAG`-collection are synthetically generated using our own, novel time series anomaly generator GutenTAG (see [GutenTAG](https://github.com/HPI-Information-Systems/gutentag)).
 All other datasets were provided by the community.
 
-> We would like to thank all members of our community that published or provided their data, without which this
-work would not have been possible.
+> We would like to thank all members of our community that published or provided their data, without which this work would not have been possible.
 
 The next section (Sect. [Collection of existing datasets](#collection-of-datasets)) describes the dataset collection and preprocessing process for the existing datasets.
 
@@ -359,7 +358,13 @@ The following table lists the sources of our datasets and provides the links to 
 You can download a spreadsheet as an index to the preprocessed datasets with metadata in CSV-format from [here](https://owncloud.hpi.de/s/3Cp8Q5H9gn7EVK0/download).
 This file contains the same metadata as the dataset overview in Sect. [Dataset list](#dataset-list).
 
-> Note that the GutenTAG-collection contains its own index-file, called `datasets.csv`.
+> :warning: Notes regarding the GutenTAG-collection
+>
+> The GutenTAG-collection contains its own index-file, called `datasets.csv`.
+>
+> After publication of our paper, we noticed that most of the random-walk datasets generated with GutenTAG contain an unwanted smoothing-artifact at the end of the time series:
+> The time series has a visible steep climb or fall.
+> We fixed the dataset generator GutenTAG, but kept the datasets as is to ensure reproducibility of our evaluation results.
 
 ### Preprocessing
 
